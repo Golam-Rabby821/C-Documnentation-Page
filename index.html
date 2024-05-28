@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>C++ Documentation</title>
+    </head>
+    <body>
+            <nav id="navbar">
+                <ul>
+                    <li><header>C++ Documentation</header></li>
+                    <li><a id="active" class="nav-link" href="#Introduction_to_C++" accesskey="1">Introduction to C++</a></li>
+                    <li><a class="nav-link" href="#First_C++_Program" accesskey="2">First C++ Program</a></li>
+                    <li><a class="nav-link" href="#C++_Comments" accesskey="3">C++ Comments</a></li>
+                    <li><a class="nav-link" href="#Keywords_and_Identifiers" accesskey="4">Keywords and Identifiers</a></li>
+                    <li><a class="nav-link" href="#Variables,_Literals_and_Constants" accesskey="5">Variables, Literals and Constants</a></li>
+                    <li><a class="nav-link" href="#Data_Types" accesskey="6">Data Types</a></li>
+                    <li><a class="nav-link" href="#Type_Modifiers" accesskey="7">Type Modifiers</a></li>
+                    <li><a class="nav-link" href="#Constants" accesskey="8">Constants</a></li>
+                    <li><a class="nav-link" href="#Basic_Input/Output" accesskey="9">Basic Input/Output</a></li>
+                    <li><a class="nav-link" href="#Operators" accesskey="10">Operators</a></li>
+                    <li><a class="nav-link" href="#Conditionals" accesskey="11">Conditionals</a></li>
+                    <li><a class="nav-link" href="#Loops" accesskey="12">Loops</a></li>
+                    <li><a class="nav-link" href="#Functions" accesskey="13">Functions</a></li>
+                    <li><a class="nav-link" href="#Arrays_in_C++" accesskey="14">Arrays in C++</a></li>
+                    <li><a class="nav-link" href="#Pointers_in_C++" accesskey="15">Pointers in C++</a></li>
+                    <li><a class="nav-link" href="#References" accesskey="16">References</a></li>
+                </ul>
+            </nav>
+
+        <main id="main-doc">
+            <!--Intro to c++ -->
+            <section id="Introduction_to_C++" class="main-section">
+                <header id="Introduction_to_C++">Introduction to C++</header>
+                <p>C++ is a powerful, high-performance programming language created by Bjarne Stroustrup as an extension of C. It combines the features of both high-level and low-level languages, making it versatile for system programming, game development, real-time simulations, and more. To start with C++, you need a C++ compiler, such as GCC or MSVC, and a text editor or an Integrated Development Environment (IDE) like Visual Studio, Code::Blocks, or CLion.</p>
+        
+            </section>
+            <!--First c++ program -->
+            <section id="First_C++_Program" class="main-section">
+                <header id="First_C++_Program">First C++ Program</header>
+                <p>Here's a basic "Hello, World!" program in C++:</p>
+                <pre>
+                    <code>
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}                            
+                    </code>
+                </pre>
+                <ul> <span class="bold">Explanation:</span>
+                   <li><span class="bold">#include <'iostream'>: </span>This preprocessor directive includes the standard input-output stream library.</li>
+                   <li><span class="bold">int main(): </span>The main function where program execution begins.</li>
+                   <li><span class="bold">std::cout: </span>This is used to output text to the console.</li>
+                   <li><span class="bold">std::endl: </span>Ends the current line and flushes the output buffer.</li>
+                 </ul> 
+            </section>
+            <!--C++ comments-->
+            <section id="C++_Comments" class="main-section">
+                <header id="C++_Comments">C++ Comments</header>
+                <p>Comments are used to explain code and are ignored by the compiler. There are two types:</p>
+                <ul>
+                   <li><span class="bold">Single-line comments: </span>Start with //.</li>
+                   <li><span class="bold">Multi-line comments: </span>Enclosed between /* and */.</li>
+                </ul>
+                <p>Example: </p>
+                <pre>
+                    <code>
+// This is a single-line comment
+
+/*
+    This is a
+    multi-line comment
+*/         
+                    </code>
+                </pre>               
+            </section>
+            <!--Keywords and Identifiers-->
+            <section id="Keywords_and_Identifiers" class="main-section">
+                <header id="Keywords_and_Identifiers">Keywords and Identifiers</header>
+                <ul>
+                   <li><span class="bold">Keywords: </span>Reserved words with special meaning in C++, such as int, return, if, else. They cannot be used as names for variables or functions.</li>
+                   <li><span class="bold">Identifiers: </span>Names given to variables, functions, classes, etc. They must begin with a letter (uppercase or lowercase) or an underscore (_), followed by letters, digits, or underscores.</li>
+                </ul>             
+            </section>
+            <!--Variables, Literals and Constants-->
+            <section id="Variables,_Literals_and_Constants" class="main-section">
+                <header id="Variables,_Literals_and_Constants">Variables, Literals and Constants</header>
+                <ul>
+                   <li><span class="bold">Variables: </span>Named storage that can hold a value. For example, int age = 25; declares an integer variable named age with an initial value of 25.</li>
+                   <li><span class="bold">Literals: </span>Fixed values directly written in the code, like 42, 3.14, or 'A'.</li>
+                   <li><span class="bold">Constants: </span>Values that cannot be changed once assigned. Declared with the const keyword. Example: const int MAX = 100;.</li>
+                </ul>             
+            </section>
+            <!--Data Types-->
+            <section id="Data_Types" class="main-section">
+                <header id="Data_Types">Data Types</header>
+                <p>C++ has several basic data types:</p>
+                <ul>
+                   <li><span class="bold">'int': </span>Integer numbers.</li>
+                   <li><span class="bold">'float': </span>Single-precision floating point numbers.</li>
+                   <li><span class="bold">'double': </span>Double-precision floating point numbers.</li>
+                   <li><span class="bold">'char': </span>Single character.</li>
+                   <li><span class="bold">'bool': </span>Boolean value (true or false).</li>
+                </ul>             
+            </section>
+        <!--Type Modifiers-->
+        <section id="Type_Modifiers" class="main-section">
+            <header id="Type_Modifiers">Type Modifiers</header>
+            <p>Type modifiers change the meaning of the base data types:</p>
+            <ul>
+               <li><span class="bold">'signed': </span>Can hold positive and negative values.</li>
+               <li><span class="bold">'unsigned': </span>Can hold only non-negative values.</li>
+               <li><span class="bold">'short': </span>Shortened range of values.</li>
+               <li><span class="bold">'long': </span>Extended range of values.</li>
+               <li><span class="bold">'bool': </span>Boolean value (true or false).</li>
+            </ul>
+            <p>Example: </p>
+                <pre> 
+                    <code>
+unsigned int positiveNumber = 10;
+long long int largeNumber = 123456789;
+                    </code>
+                </pre>              
+        </section>
+        <!--Constants-->
+        <section id="Constants" class="main-section">
+            <header id="Constants">Constants</header>
+            <p>Constants are immutable values that are declared using <b>'const'</b> or <b>'#define'</b> preprocessor directive.</p>
+
+            <p>Example: </p>
+                <pre>
+                    <code>
+const float PI = 3.14;
+#define MAX_BUFFER_SIZE 1024
+                    </code>
+                </pre>              
+        </section>
+        <!--Basic Input/Output-->
+        <section id="Basic_Input/Output" class="main-section">
+            <header id="Basic_Input/Output">Basic Input/Output</header>
+            <ul>
+               <li><span class="bold">Input: </span>Use <b>'std::cin'</b> to read input from the standard input (usually the keyboard).</li>
+                 <pre>
+                   <code>
+int age;
+std::cin >> age;
+                    </code>
+                  </pre> 
+               <li><span class="bold">Output: </span>Use <b>'std::cout'</b> to write output to the standard output (usually the console).</li>
+               <pre>
+                <code>
+std::cout << "Your age is " << age << std::endl;
+                 </code>
+               </pre> 
+            </ul>            
+        </section>
+          <!--Operators-->
+          <section id="Operators" class="main-section">
+            <header id="Operators">Operators</header>
+            <p>Operators perform operations on variables and values:</p>
+            <ul>
+               <li><span class="bold">Arithmetic Operators: </span>'+' (addition), '-' (subtraction), '*' (multiplication), '/' (division), '%' (modulus).</li>
+               <li><span class="bold">Comparison Operators: </span>'==' (equal), '!=' (not equal), '<' (less than), ''>' (greater than), '<=' (less than or equal to), '>=' (greater than or equal to).</li>
+               <li><span class="bold">Logical Operators: </span>'&&' (logical and), '||' (logical or), '!' (logical not)</li>
+            </ul>             
+        </section>
+        <!--Conditionals-->
+        <section id="Conditionals" class="main-section">
+            <header id="Conditionals">Conditionals</header>
+            <p >Conditionals control the flow of the program based on conditions. The main conditional statements are:</p>
+            <ul>
+               <li><span class="bold">if: </span>Executes a block of code if a specified condition is true.</li>
+               <li><span class="bold">else: </span>Executes a block of code if the condition in the <b>'if'</b> statement is false.</li>
+               <li><span class="bold">else if: </span>Specifies a new condition if the previous one is false.</li>
+               <li><span class="bold">switch: </span>Selects one of many blocks of code to be executed based on the value of a variable.</li>
+            </ul>
+            <p>Example: </p>
+                <pre>
+                    <code>
+int number = 10;
+
+if (number > 0) {
+   std::cout << "Positive number" << std::endl;
+} 
+else if (number < 0) {
+   std::cout << "Negative number" << std::endl;
+} 
+else {
+   std::cout << "Zero" << std::endl;
+}
+                    </code>
+                </pre>              
+        </section>
+         <!--Loops-->
+         <section id="Loops" class="main-section">
+            <header id="Loops">Loops</header>
+            <p>Loops are used to repeat a block of code multiple times. The main types of loops are:</p>
+            <ul>
+               <li><span class="bold">for: </span>Repeats a block of code a specified number of times.</li>
+               <li><span class="bold">while: </span>Repeats a block of code as long as a specified condition is true.</li>
+               <li><spa class="bold">do while: </span>Executes a block of code once, and then repeats as long as a specified condition is true.</li>
+            </ul>
+            <p>Example: </p>
+                <pre>
+                    <code>
+// For loop
+for (int i = 0; i < 5; i++) {
+    std::cout << i << std::endl;
+}
+                        
+// While loop
+int j = 0;
+while (j < 5) {
+    std::cout << j << std::endl;
+    j++;
+}
+                        
+// Do-while loop
+int k = 0;
+do {
+  std::cout << k << std::endl;
+  k++;
+} while (k < 5);                        
+                    </code>
+                </pre>              
+        </section>
+        <!--Functions-->
+        <section id="Functions" class="main-section">
+            <header id="Functions">Functions</header>
+            <p>Functions are reusable blocks of code that perform a specific task. They can accept parameters and return a value.</p>
+            <ul>
+               <li><span class="bold">Declaration: </span>Specifies the function's return type, name, and parameters.</li>
+               <li><span class="bold">Definition: </span>Contains the actual body of the function.</li>
+               <li><span class="bold">Call: </span>Executes the function.</li>
+            </ul>
+            <p>Example: </p>
+                <pre>
+                    <code>
+// Function declaration
+int add(int a, int b);
+
+// Function definition
+int add(int a, int b) {
+    return a + b;
+}
+
+// Function call
+int sum = add(5, 3);
+std::cout << "Sum: " << sum << std::endl;                     
+                    </code>
+                </pre>              
+        </section>
+
+        <!--Arrays in C++ -->
+        <section id="Arrays_in_C++" class="main-section">
+            <header id="Arrays_in_C++">Arrays in C++</header>
+            <p>Arrays in C++ are collections of elements of the same type stored in contiguous memory locations. They provide a way to store multiple values under a single name and access them using indices.</p>
+            <h3>Declaration and Initialization</h3>
+            <p>To declare an array, specify the type of its elements, the array name, and the size of the array in square brackets. You can also initialize the array at the time of declaration.</p>
+            <p>Example: </p>
+            <pre>
+                <code>
+int numbers[5] = {1, 2, 3, 4, 5};
+                 </code>
+            </pre>
+
+            <h3>Accessing Array Elements</h3>
+            <p>Array elements are accessed using their indices, with the first element at index 0.</p>
+            <p>Example: </p>
+            <pre>
+                <code>
+#include <iostream>
+
+int main() {
+  int numbers[5] = {1, 2, 3, 4, 5};
+                        
+   // Access and print the first element
+   std::cout << "First element: " << numbers[0] << std::endl;
+                        
+   // Modify the third element
+   numbers[2] = 10;
+                        
+   // Access and print the modified third element
+   std::cout << "Modified third element: " << numbers[2] << std::endl;
+                        
+  return 0;
+}                        
+                 </code>
+            </pre>
+            <p>Output:</p>
+            <pre>
+                <code>
+First element: 1
+Modified third element: 10
+                </code>
+            </pre>
+            <p>In this example:</p>
+            <ul>
+               <li><span class="bold">'numbers[0]' </span>accesses the first element.</li>
+               <li><span class="bold">'numbers[2]' </span>accesses the third element and modifies its value to 10.</li>
+            </ul>          
+        </section>
+
+        <!--Pointers in C++ -->
+        <section id="Pointers_in_C++" class="main-section">
+            <header id="Pointers_in_C++">Pointers in C++</header>
+            <p>Pointers in C++ are variables that store the memory address of another variable. They provide a way to manipulate data in memory directly and are essential for dynamic memory allocation, passing arguments by reference, and working with arrays and data structures efficiently.</p>
+            <h3>Declaration and Initialization</h3>
+            <p>To declare a pointer, specify the type of the variable it will point to, followed by an asterisk (<b>'*'</b>), and then the pointer's name. Initialize the pointer using the address-of operator (<b>'&'</b>).</p>
+            <p>Example: </p>
+            <pre>
+                <code>
+int num = 10;
+int* ptr = &num;
+                 </code>
+            </pre>
+            <p>This declares a pointer <b>'ptr'</b> that stores the address of the integer variable <b>'num'</b>.</p>
+            <h3>Accessing and Modifying Values</h3>
+            <p>Pointers can be dereferenced using the asterisk (<b>'*'</b>) operator to access or modify the value at the memory address they store.</p>
+            <p>Example: </p>
+            <pre>
+                <code>
+#include <iostream>
+
+int main() {
+ int num = 10;
+ int* ptr = &num;
+                        
+    // Access the value using the pointer
+    std::cout << "Value of num: " << *ptr << std::endl;
+                        
+    // Modify the value using the pointer
+    *ptr = 20;
+                        
+    // Access the modified value
+    std::cout << "Modified value of num: " << num << std::endl;
+                        
+ return 0;
+}                        
+                 </code>
+            </pre>
+            <p>Output:</p>
+            <pre>
+                <code>
+Value of num: 10
+Modified value of num: 20
+                </code>
+            </pre>
+            <p>In this example:</p>
+            <ul>
+               <li><b>'*ptr'</b> is used to access the value stored at the memory address contained in <b>'ptr'</b></li>
+               <li>Modifying <b>'*ptr'</b> changes the value of <b>'num'</b> because <b>'ptr'</b> points to <b>'num'</b>.</li>
+            </ul>
+            <h3>Null Pointers</h3>
+            <p>A pointer can be initialized to <b>'nullptr'</b> to indicate that it is not pointing to any valid memory location.</p>
+            <p>Example: </p>
+            <pre>
+                <code>
+int* ptr = nullptr;
+                 </code>
+            </pre>
+            <h3>Pointers and Arrays</h3>
+            <p>When working with arrays, pointers can be used to traverse and manipulate the array elements.</p>
+            <p>Example: </p>
+            <pre>
+                <code>
+#include <iostream>
+
+int main() {
+ int numbers[5] = {1, 2, 3, 4, 5};
+ int* ptr = numbers; // Points to the first element of the array
+
+ for (int i = 0; i < 5; i++) {
+   std::cout << *(ptr + i) << " "; // Access each element using the pointer
+  }
+                        
+  return 0;
+}                       
+                 </code>
+            </pre>
+            <p>Output:</p>
+            <pre>
+                <code>
+1 2 3 4 5
+                </code>
+            </pre>
+            <p>In this example:</p>
+            <ul>
+               <li><b>'ptr'</b> points to the first element of the array <b>'numbers'</b>.</b></li>
+               <li><b>'*(ptr + i)'</b> accesses each array element by offsetting the pointer.</li>
+            </ul>
+            <p >Pointers are powerful tools in C++ that provide flexibility and control over memory management and data manipulation.</p>
+        </section>
+
+        <!-- References -->
+        <section id="References" section class="main-section">
+          <header id="References">References</header>
+          <ul>
+            <li>All the Documentation of this page are taken from <a href="https://chatgpt.com/">ChatGPT</a> & <a href="https://www.programiz.com/cpp-programming/getting-started">Programiz</a>.</li>
+          </ul>
+        </section>
+
+        </main>
+    </body>
+
+
+
+</html>
